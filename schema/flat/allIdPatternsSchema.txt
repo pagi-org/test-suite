@@ -1,0 +1,49 @@
+http://pagi.org/testSuite/allIdPatterns
+
+NODETYPE nt1 {seq}
+
+NODETYPE nt10 {random:4/36}
+
+NODETYPE nt11 {random:6/10}
+
+NODETYPE nt12 {prop:,:p1}
+PROP p1 1 1 STRING
+
+NODETYPE nt12e {edge:,:e1}
+EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt12
+
+NODETYPE nt14 {prop: __ :p1}
+PROP p1 1 1 STRING
+
+NODETYPE nt14e {edge: __ :e1}
+EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt14
+
+NODETYPE nt2 {random:8/10}
+
+NODETYPE nt3 {prop:,:p1}
+PROP p1 1 1 STRING
+
+NODETYPE nt3e {edge:,:e1}
+EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt3
+
+NODETYPE nt4 myNode
+
+NODETYPE nt5 myNode-{seq}-stuff
+
+NODETYPE nt6 myNode-{random:8/10}-stuff
+
+NODETYPE nt7 myNode-{prop:,:p1}-stuff
+PROP p1 1 1 STRING
+
+NODETYPE nt7e myNode-{edge:,:e1}-stuff
+EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt7
+
+NODETYPE nt8 my-{seq}-{random:8/10}-{prop:,:p1}-{prop:,:p2}-stuff
+PROP p1 1 1 STRING
+PROP p2 1 1 STRING
+
+NODETYPE nt8e my-{seq}-{random:8/10}-{edge:,:e1}-{edge:,:e2}-stuff
+EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt8
+EDGE e2 0 UNBOUNDED 0 UNBOUNDED nt7
+
+NODETYPE nt9 {random:4/10}

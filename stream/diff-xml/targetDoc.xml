@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://pagi.org/stream" id="targetDoc">
+    <schema uri="http://pagi.org/testSuite/extTokFull"></schema>
+    <asSpan nodeType="TOK"/>
+    <asSequence nodeType="TOK"/>
+    <asSequence nodeType="SB"/>
+    <asSpanContainer spanType="TOK" nodeType="SB"/>
+
+    <content contentType="text/plain">Mary had a little-lamb</content>
+
+    <node type="TOK" id="0:4">
+        <intProp v="4" k="length"></intProp>
+        <intProp v="0" k="start"></intProp>
+        <strProp v="NN" k="pos"></strProp>
+        <edge to="5:3" toType="TOK" type="next"></edge>
+    </node>
+
+    <node type="TOK" id="5:3">
+        <intProp v="3" k="length"></intProp>
+        <intProp v="5" k="start"></intProp>
+        <strProp v="VB" k="pos"></strProp>
+        <edge to="9:1" toType="TOK" type="next"></edge>
+    </node>
+
+    <node type="TOK" id="9:1">
+        <intProp v="1" k="length"></intProp>
+        <intProp v="9" k="start"></intProp>
+        <edge to="11:6" toType="TOK" type="next"></edge>
+    </node>
+
+    <node type="TOK" id="11:6">
+        <intProp v="6" k="length"></intProp>
+        <intProp v="11" k="start"></intProp>
+        <strProp v="NN" k="pos"></strProp>
+        <edge to="18:4" toType="TOK" type="next"></edge>
+    </node>
+
+    <node type="TOK" id="18:4">
+        <intProp v="4" k="length"></intProp>
+        <intProp v="18" k="start"></intProp>
+        <strProp v="NNP" k="pos"></strProp>
+    </node>
+
+    <node type="COREF" id="2">
+        <strProp v="MaryLamb" k="name"></strProp>
+        <edge type="member" toType="TOK" to="0:4"/>
+        <edge type="member" toType="TOK" to="11:11"/>
+    </node>
+
+</document>

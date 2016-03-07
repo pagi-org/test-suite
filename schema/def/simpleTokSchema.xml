@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pagis xmlns="http://pagi.org/schema" id="http://pagi.org/testSuite/simpleTok">
 
-	<nodeType name="TOK" idGenerator="{prop:start}:{prop:length}">
+	<nodeType name="TOK">
 		<sequence/>
 		<span/>
 	</nodeType>

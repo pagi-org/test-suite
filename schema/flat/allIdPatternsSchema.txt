@@ -7,7 +7,7 @@ NODETYPE nt10
 NODETYPE nt11
 
 NODETYPE nt12
-PROP p1 1 1 STRING A simple string property.
+PROP p1 1 1 STRING
 
 NODETYPE nt12e
 EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt12
@@ -21,7 +21,7 @@ EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt14
 NODETYPE nt2
 
 NODETYPE nt3
-PROP p1 1 1 STRING
+PROP p1 1 1 STRING A simple string property.
 
 NODETYPE nt3e
 EDGE e1 0 UNBOUNDED 0 UNBOUNDED nt3 The edge that links this to another doohicky.

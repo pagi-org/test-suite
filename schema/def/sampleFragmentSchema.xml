@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pagis-fragment id="organization-employee" xmlns="http://pagi.org/schema">
+    <nodeType name="organization">
+        <!-- required attributes -->
+        <stringProperty name="name" minArity="1" maxArity="1"/>
+
+        <stringProperty name="website" />
+        <integerProperty name="num_employees" minRange="1" maxArity="1"/>
+
+        <edgeType name="org_parent" targetNodeType="organization" maxArity="1" />
+        <edgeType name="org_child" targetNodeType="organization"/>
+    </nodeType>
+
+    <nodeType name="employee">
+        <!-- required attributes -->
+        <stringProperty name="name" minArity="1" maxArity="1"/>
+        <stringProperty name="ssn" minArity="1" maxArity="1"/>                           <!-- social security number -->
+        <stringProperty name="title" />
+        <stringProperty name="ethnicity" />
+        <stringProperty name="birth_date" maxArity="1"/>
+        <stringProperty name="email" />
+        <stringProperty name="phone" />
+        <enumProperty name="gender" maxArity="1">
+            <item name="M"/>
+            <item name="F"/>
+        </enumProperty>
+
+        <edgeType name="employed_by" targetNodeType="organization">
+            <stringProperty name="dur_start" maxArity="1" minArity="0"/>
+            <stringProperty name="dur_end" maxArity="1" minArity="0"/>
+        </edgeType>
+    </nodeType>
+</pagis-fragment>

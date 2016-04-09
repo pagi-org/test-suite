@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphFragment xmlns="http://pagi.org/stream" sourceGraph="company-org" fragmentIdentifier="IT">
+    <schema uri="organization-employee"/>
+
+    <node type="organization" id="my-company">
+        <strProp k="name" v="My Company"/>
+        <strProp k="num_employees" v="2"/>
+    </node>
+
+    <node type="employee" id="1231233333">
+        <strProp k="name" v="Jane Doe"/>
+
+        <strProp k="ssn" v="1231233333"/>
+        <strProp k="title" v="Director of IT"/>
+        <strProp k="ethnicity" v="Hispanic"/>
+        <strProp k="gender" v="M"/>
+
+        <edge type="employed_by" toType="organization" to="my-company">
+            <strProp k="dur_start" v="2012-01-01"/>
+        </edge>
+    </node>
+    <node type="employee" id="3213211111">
+        <strProp k="name" v="John Smith"/>
+
+        <strProp k="ssn" v="3213211111"/>
+        <strProp k="title" v="Network Administrator"/>
+        <strProp k="ethnicity" v="White"/>
+        <strProp k="gender" v="M"/>
+
+        <edge type="employed_by" toType="organization" to="my-company">
+            <strProp k="dur_start" v="2005-01-01"/>
+        </edge>
+    </node>
+</graphFragment>

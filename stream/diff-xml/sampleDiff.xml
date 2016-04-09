@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphDiff xmlns="http://pagi.org/stream" sourceId="sourceDoc" targetId="targetDoc">
+    <sourceTargetNode nodeType="COREF" sourceId="1" targetId="2"/>
+
+    <nodeRemove type="TOK" id="11:11">
+        <intProp v="6" k="length"></intProp>
+        <intProp v="11" k="start"></intProp>
+        <strProp v="NN" k="pos"></strProp>
+    </nodeRemove>
+
+    <node type="TOK" id="11:6">
+        <intProp v="6" k="length"></intProp>
+        <intProp v="11" k="start"></intProp>
+        <strProp v="NN" k="pos"></strProp>
+        <edge to="18:4" toType="TOK" type="next"></edge>
+    </node>
+
+    <node type="TOK" id="18:4">
+        <intProp v="4" k="length"></intProp>
+        <intProp v="18" k="start"></intProp>
+        <strProp v="NNP" k="pos"></strProp>
+    </node>
+
+    <nodeUpdate type="TOK" id="9:1">
+        <strPropRemove k="pos" v="NN"/>
+        <edgeRemove to="11:11" toType="TOK" type="next"/>
+        <edge to="11:6" toType="TOK" type="next"></edge>
+    </nodeUpdate>
+
+    <nodeUpdate type="COREF" id="1">
+        <strPropRemove k="name" v="mary"/>
+        <strProp k="name" v="MaryLamb"/>
+    </nodeUpdate>
+</graphDiff>
